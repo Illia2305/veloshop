@@ -1,6 +1,18 @@
 {
 	"users": [
 		{
+			"id":1,
+			"name":"Dmutro",
+			"surname":"Kic",
+			"balance":"1500"
+		},
+		{
+			"id": 2,
+			"name": "Alina",
+			"surname": "Yakymchuk",
+			"balanse": "1500"
+		},
+		{
 			"id": 3,
 			"name": "Illia",
 			"surname": "Martinyuk",
