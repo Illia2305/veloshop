@@ -5,6 +5,12 @@
 			"name": "Alina",
 			"surname": "Yakymchuk",
 			"balanse": "1500"
+		},
+		{
+			"id": 3,
+			"name": "Illia",
+			"surname": "Martinyuk",
+			"balance": "1500"
 		}
 	]
 }
