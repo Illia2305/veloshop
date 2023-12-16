@@ -30,6 +30,11 @@
 			"id": 2,
 			"name": "BMX",
 			"price": "15000"
+		},
+		{
+			"id": 3,
+			"name": "sports bake",
+			"price": "10500"
 		}
 	]
 }
