@@ -6,5 +6,13 @@
 			"surname": "Martinyuk",
 			"balance": "1500"
 		}
+	],
+
+	"products": [
+		{
+			"id": 1,
+			"name": "Mountain bike",
+			"price": "20000"
+		}
 	]
 }
