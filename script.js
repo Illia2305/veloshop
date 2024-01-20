@@ -56,7 +56,6 @@ function addProductToCart(id) {
 		document.getElementById('cart-button').classList.remove('active')
 	}, 500)
 }
-
 function drawCartProduct() {
 	if (cart-linght === 0) return cartProd.innerHTML = 'Cart is empy' 
 		cartProd.innerHTML = null
@@ -72,4 +71,13 @@ function drawCartProduct() {
 		<p>Total Price: ${sum}$</p>
 		<button onclick= "buyAll()">Buy All</button>
 		`
+}
+function buyAll() {
+	cart = [];
+	cartProd.innerHTML = 'Money was withdrawn from your credit card';
+	localStorage.setItem("cart", '[]');
+}
+
+function openCart() {
+	cartProd.classList.toggle('hide');
 }
