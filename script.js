@@ -42,8 +42,3 @@ if(localStorage.getItem('cart')) {
 
 
 }
-
-
-
-
-
