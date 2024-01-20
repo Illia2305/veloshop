@@ -73,4 +73,3 @@ function drawCartProduct() {
 		<button onclick= "buyAll()">Buy All</button>
 		`
 }
-
