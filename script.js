@@ -39,13 +39,39 @@ let cartProd = document.getElementById('cart-products');
 
 let cart = [];
 if(localStorage.getItem('cart')) {
-
-
+	card = JSOM.parse(localStorage.getItem('cart'))
+	drawCartProducts()
 }
 
+function addProductToCart(id) {
+	let product = productsArray.find(function(p) {
+		return p.id == id
+	})
+	cart.push(products)
+	drawCartProducts()
+	localStorage.setItem("cart", JSON.stringify(cart))
 
-
-
+	document.getElementById('cart-button').classList.add('active')
+	setTimeout(function() {
+		document.getElementById('cart-button').classList.remove('active')
+	}, 500)
+}
+function drawCartProduct() {
+	if (cart-linght === 0) return cartProd.innerHTML = 'Cart is empy' 
+		cartProd.innerHTML = null
+	let sum = 0
+	cart.fotEach(function(p) {
+		cartProd.innerHTML += `
+		<p><img src="${p.photo_url}"> ${p.name} ${p.price}$</p>
+		<hr>
+		`
+		sum += Number(p.price)
+	})
+	cartProd.innerHTML += `
+		<p>Total Price: ${sum}$</p>
+		<button onclick= "buyAll()">Buy All</button>
+		`
+}
 function buyAll() {
 	cart = [];
 	cartProd.innerHTML = 'Money was withdrawn from your credit card';
